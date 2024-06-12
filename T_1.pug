@@ -1,0 +1,18 @@
+//- create 1 pug file which contains a text field and a email field by submiting the form on next page callled /data and submited data will be displayed .
+
+html 
+head 
+    title FORM DATA 
+body 
+    .form 
+        form(action="/data" ,method="get")
+            div 
+                label Enter YOUR NAME 
+                input(type="text" ,name="uname")
+
+            div 
+                label Enter YOUR EMAIL
+                input(type="text" ,name="email")
+            div 
+                input(type="submit" ,name="submit")
+

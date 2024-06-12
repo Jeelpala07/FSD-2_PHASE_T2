@@ -4,12 +4,7 @@ app.set("view engine", "pug")
 var path = require("path")
 var staticpath = path.join(__dirname)
 app.get("/", (req, res) => {
-    res.render(staticpath + "/T_1")
-    res.send()
-})
-app.get("/data",(req,res)=>{
-    res.write(`UNAME ${req.query.uname} \n`)
-    res.write(`EMAIL ${req.query.email}`)
+    res.render(staticpath + "/Simple")
     res.send()
 })
 app.listen(5050)
